@@ -26,3 +26,9 @@ Route::get('/add/{num1}/{num2}', 'TestController@testSum');
 Route::get('/ysearch/{q}', 'TestController@testYoutubeSearch');
 Route::get('/list/{list}', 'TestController@playlistSearch');
 Route::get('/testapi', 'LoginController@testAPI');
+Route::get('/policy', function(){
+    return "We will not collect or store your info.";
+});
+Route::get('/toc', function(){
+    return "Our support and affection is unconditional.";
+});

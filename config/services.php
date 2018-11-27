@@ -36,21 +36,21 @@ return [
     ],
 
     'linkedin' => [
-        'client_id' => 'XXXXXXXXXXXXXX',
-        'client_secret' => 'XXXXXXXXXXXXXX',
-        'redirect' =>  'http://chanchal.com/login/linkedin/callback' 
+        'client_id' => '81bj4dfjqx9iw8',
+        'client_secret' => '9rrdklK079nuJYJ7',
+        'redirect' =>  'https://trytube.herokuapp.com/login/linkedin/callback'  // 'http://kinderji.herokuapp.com/auth/linkedin/callback'
     ],
 
     'github' => [
-        'client_id' => 'XXXXXXXXXXXXXX',
-        'client_secret' => 'XXXXXXXXXXXXXXXXXX',
-        'redirect' => 'http://chanchal.com/login/github/callback',
+        'client_id' => '7291c3c65c33489975d7',
+        'client_secret' => 'f02e93c6942dab3ac936368ceb0de5ad6c94f2aa',
+        'redirect' => 'https://trytube.herokuapp.com/login/github/callback',
     ],
     
     'google' => [
-        'client_id' => 'XXXXXXXXXXXXXXXXXXX' ,
-        'client_secret' => 'XXXXXXXXXXXXXXXXXXX' ,
-        'redirect' => 'http://chanchal.com/login/google/callback'
+        'client_id' => '190446442166-ui5c2pffbt302qdkfhob99e1o8gibffo.apps.googleusercontent.com' ,//'190446442166-7ndtniluob9lhdedni07q316hl7sr85f.apps.googleusercontent.com'
+        'client_secret' => 'EKu18xf7PxEp9_ZL0yLIXBEY' ,//'px9tqc0fdWvVJGgtBM2yM7Ds'
+        'redirect' => 'https://trytube.herokuapp.com/login/google/callback',
     ],
 
 ];
