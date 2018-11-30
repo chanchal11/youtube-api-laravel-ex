@@ -10,7 +10,7 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <link href="http://localhost/css/playlists.css" rel="stylesheet">
+    <link href="http://trytube.herokuapp.com/css/playlists.css" rel="stylesheet">
         <link href="http://trytube.herokuapp.com/css/navbar.css" rel="stylesheet">
         <link href="http://trytube.herokuapp.com/css/basic.css" rel="stylesheet">
         <link href="http://trytube.herokuapp.com/css/select.css" rel="stylesheet">
