@@ -38,13 +38,13 @@ return [
     'linkedin' => [
         'client_id' => '81bj4dfjqx9iw8',
         'client_secret' => '9rrdklK079nuJYJ7',
-        'redirect' =>  'http://chanchal.com/login/linkedin/callback'  // 'http://kinderji.herokuapp.com/auth/linkedin/callback'
+        'redirect' =>  'http://trytube.herokuapp.com/login/linkedin/callback'  // 'http://kinderji.herokuapp.com/auth/linkedin/callback'
     ],
 
     'github' => [
         'client_id' => '7291c3c65c33489975d7',
         'client_secret' => 'f02e93c6942dab3ac936368ceb0de5ad6c94f2aa',
-        'redirect' => 'http://chanchal.com/login/github/callback',
+        'redirect' => 'http://trytube.herokuapp.com/login/github/callback',
     ],
     
     'google' => [

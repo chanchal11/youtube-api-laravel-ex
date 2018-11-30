@@ -68,7 +68,7 @@
                                     <p class="lead"></p>
                                 </div>
                                 <div class="col-xs-12 col-md-6">
-                                <a class="btn btn-success" href="http://localhost/playlist/{{$playlist->id}}">View list</a>
+                                <a class="btn btn-success" href="http://trytube.herokuapp.com/playlist/{{$playlist->id}}">View list</a>
                                 </div>
                             </div>
                         </div>
