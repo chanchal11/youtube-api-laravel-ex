@@ -50,7 +50,7 @@ return [
     'google' => [
         'client_id' => '190446442166-ui5c2pffbt302qdkfhob99e1o8gibffo.apps.googleusercontent.com' ,//'190446442166-7ndtniluob9lhdedni07q316hl7sr85f.apps.googleusercontent.com'
         'client_secret' => 'EKu18xf7PxEp9_ZL0yLIXBEY' ,//'px9tqc0fdWvVJGgtBM2yM7Ds'
-        'redirect' => 'http://localhost/youtube/callback',
+        'redirect' => 'http://trytube.herokuapp.com/youtube/callback',
         'scope' => 'https://www.googleapis.com/auth/youtube.readonly'
     ],
 
