@@ -1,1 +1,1 @@
-web: php artisan serve --host=trytube.herokuapp.com --port=80
+web: vendor/bin/heroku-php-apache2 public/

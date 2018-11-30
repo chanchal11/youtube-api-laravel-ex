@@ -165,6 +165,7 @@ return [
         Illuminate\View\ViewServiceProvider::class,
         Laravel\Socialite\SocialiteServiceProvider::class,
         Alaouy\Youtube\YoutubeServiceProvider::class,
+        Sineld\BladeSet\BladeSetServiceProvider::class,
         /*
          * Package Service Providers...
          */

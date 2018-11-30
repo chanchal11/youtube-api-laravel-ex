@@ -18,6 +18,7 @@ class TestController extends Controller
     }
     public function testYoutubeSearch($q){
         $youtube = new Youtube(getenv("YOUTUBE_API_KEY"));
+        $limit = rand(3, 10);
         $response = $youtube->search($q,10);
         foreach($response as $data)
         //    echo $data->snippet->title."</br></br>";
