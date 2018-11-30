@@ -26,7 +26,7 @@ class LoginController extends Controller
 		$request->session()->push('email',$user->getEmail());
 		//$request->session()->push('token',$user->token);
 		//die($token);
-		if($service=='youtube'){
+		if($service=='google'){
 			$client = new \Google_Client();
 			$client->setClientId("190446442166-ui5c2pffbt302qdkfhob99e1o8gibffo.apps.googleusercontent.com");
 			$client->setClientSecret("EKu18xf7PxEp9_ZL0yLIXBEY");
