@@ -11,9 +11,9 @@
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <link href="http://localhost/css/playlists.css" rel="stylesheet">
-        <link href="http://localhost/css/navbar.css" rel="stylesheet">
-        <link href="http://localhost/css/basic.css" rel="stylesheet">
-        <link href="http://localhost/css/select.css" rel="stylesheet">
+        <link href="http://trytube.herokuapp.com/css/navbar.css" rel="stylesheet">
+        <link href="http://trytube.herokuapp.com/css/basic.css" rel="stylesheet">
+        <link href="http://trytube.herokuapp.com/css/select.css" rel="stylesheet">
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
         <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
