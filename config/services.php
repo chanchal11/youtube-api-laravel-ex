@@ -42,14 +42,14 @@ return [
     ],
 
     'github' => [
-        'client_id' => '7291c3c65c33489975d7',
-        'client_secret' => 'f02e93c6942dab3ac936368ceb0de5ad6c94f2aa',
+        'client_id' => 'XXXXXXXXXXXXXX',
+        'client_secret' => 'XXXXXXXXXXXXXXXXX',
         'redirect' => 'http://trytube.herokuapp.com/login/github/callback',
     ],
     
     'google' => [
-        'client_id' => '190446442166-ui5c2pffbt302qdkfhob99e1o8gibffo.apps.googleusercontent.com' ,//'190446442166-7ndtniluob9lhdedni07q316hl7sr85f.apps.googleusercontent.com'
-        'client_secret' => 'EKu18xf7PxEp9_ZL0yLIXBEY' ,//'px9tqc0fdWvVJGgtBM2yM7Ds'
+        'client_id' => 'XXXXXXXXXXXXX.apps.googleusercontent.com' ,//'190446442166-7ndtniluob9lhdedni07q316hl7sr85f.apps.googleusercontent.com'
+        'client_secret' => 'XXXXXXXXXXX' ,//'px9tqc0fdWvVJGgtBM2yM7Ds'
         'redirect' => 'http://trytube.herokuapp.com/login/google/callback',
         'scope' => 'https://www.googleapis.com/auth/youtube.readonly'
     ],

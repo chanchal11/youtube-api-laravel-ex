@@ -28,8 +28,8 @@ class LoginController extends Controller
 		//die($token);
 		if($service=='google'){
 			$client = new \Google_Client();
-			$client->setClientId("190446442166-ui5c2pffbt302qdkfhob99e1o8gibffo.apps.googleusercontent.com");
-			$client->setClientSecret("EKu18xf7PxEp9_ZL0yLIXBEY");
+			$client->setClientId("XXXXXXXXXXXXXXX.apps.googleusercontent.com");
+			$client->setClientSecret("XXXXXXXXXXXXXXX");
 			$client->setScopes( array('https://www.googleapis.com/auth/youtube.readonly')); //'https://www.googleapis.com/auth/youtube'
 			$youtube = new \Google_Service_YouTube($client);
 			$client->setAccessToken($token);
