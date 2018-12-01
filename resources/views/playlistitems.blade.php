@@ -10,10 +10,10 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <link href="http://trytube.herokuapp.com/css/playlists.css" rel="stylesheet">
-        <link href="http://trytube.herokuapp.com/css/navbar.css" rel="stylesheet">
-        <link href="http://trytube.herokuapp.com/css/basic.css" rel="stylesheet">
-        <link href="http://trytube.herokuapp.com/css/select.css" rel="stylesheet">
+    <link href="http://localhost/css/playlists.css" rel="stylesheet">
+        <link href="http://localhost/css/navbar.css" rel="stylesheet">
+        <link href="http://localhost/css/basic.css" rel="stylesheet">
+        <link href="http://localhost/css/select.css" rel="stylesheet">
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
         <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -21,13 +21,21 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
         
         <script>
-    var arr = [], json_data_init_flag = false;       
+    var arr = [], json_data_init_flag = false, count =  {{$playlist['item_count'][ $playlist['items'][0]->snippet->playlistId] }};       
+    
     $(document).ready(function () {
 
         $('#list').click(function(event){event.preventDefault();$('#products .item').addClass('list-group-item');});
         $('#grid').click(function(event){event.preventDefault();$('#products .item').removeClass('list-group-item');$('#products .item').addClass('grid-group-item');});
         
     });
+
+    function initArray()
+    {
+        for(var i=0;i<count;i++){
+            arr[i] = {};
+        }
+    }
 
     function onselectHandler(button_num,type,playlistId,id){
         _('b'+button_num).innerHTML = type;
@@ -56,7 +64,7 @@
         });
         //alert('After submit');
     }
-
+    initArray();
         </script>
 
 

@@ -26,10 +26,10 @@ class LoginController extends Controller
 		$request->session()->push('email',$user->getEmail());
 		//$request->session()->push('token',$user->token);
 		//die($token);
-		if($service=='google'){
+		if($service=='youtube'){
 			$client = new \Google_Client();
-			$client->setClientId("XXXXXXXXXXXXXXX.apps.googleusercontent.com");
-			$client->setClientSecret("XXXXXXXXXXXXXXX");
+			$client->setClientId("190446442166-ui5c2pffbt302qdkfhob99e1o8gibffo.apps.googleusercontent.com");
+			$client->setClientSecret("EKu18xf7PxEp9_ZL0yLIXBEY");
 			$client->setScopes( array('https://www.googleapis.com/auth/youtube.readonly')); //'https://www.googleapis.com/auth/youtube'
 			$youtube = new \Google_Service_YouTube($client);
 			$client->setAccessToken($token);
@@ -40,14 +40,15 @@ class LoginController extends Controller
 				));
 
 				$playlists = array();
-				$cat = array();  
+				$cat = array();
+				$playlist_items_count_array = array();  
 				foreach($playlistsResponse->items as $item){
 					$playlists[$item->id] = $youtube->playlistItems->listPlaylistItems('snippet', array(
 						'playlistId' => $item->id,
 						'maxResults' => 50
 					  ));
 					  $playlistnames[$item->id] = $item->snippet->title;
-					  
+					  $playlist_items_count_array[$item->id] = $item->contentDetails->itemCount;
 					  $temp_array = array();
 					  foreach($playlists[$item->id]->items as $item1)
 					  {
@@ -60,7 +61,8 @@ class LoginController extends Controller
 				$request->session()->push('playlists',$playlistsResponse);
 				$request->session()->push('playlists-items',$playlists);
 				$request->session()->push('playlists-names',$playlistnames);
-				$request->session()->push('category',$cat);		
+				$request->session()->push('category',$cat);
+				$request->session()->push('item_count',$playlist_items_count_array);		
 			return redirect('/playlists');
 		}
 		else

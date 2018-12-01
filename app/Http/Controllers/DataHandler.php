@@ -43,7 +43,7 @@ class DataHandler extends Controller
     }
 
     public function getPlaylistItems(Request $request,$playlistId){
-        $playlist = array('title'=> $request->session()->get('playlists-names')[0]["$playlistId"], 'items' => $request->session()->get('playlists-items')[0][$playlistId]->items , 'cat' => $request->session()->get('category')[0] );
+        $playlist = array('title'=> $request->session()->get('playlists-names')[0]["$playlistId"], 'items' => $request->session()->get('playlists-items')[0][$playlistId]->items , 'cat' => $request->session()->get('category')[0], 'item_count' => $request->session()->get('item_count')[0] );
         return view('playlistitems')->with('playlist',$playlist);
     }
 
